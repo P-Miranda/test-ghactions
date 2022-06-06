@@ -1,5 +1,5 @@
 
-all: test1 test2
+all: check-tools test1 test2
 
 check-tools:
 	./check_tools.sh

@@ -6,7 +6,7 @@
 
 echo "Checking for available tools:"
 
-Tools="make python3 iverilog verilator"
+Tools="make python3"
 errors=0
 
 for tool in $Tools; do

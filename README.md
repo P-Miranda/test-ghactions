@@ -31,5 +31,8 @@ Proposed Solutions:
 - Allow organization members to trigger workflows.
     - This way, the organization members can trigger workflows for their PR's,
     while other people's PR's need manual review before triggering workflows.
+    - Other Problem: manual triggered workflows do not update commit status
 - Check for changes in `.github/workflows`
     - this is not as robust, since they can change any other script already run by the current workflow. For example changing what `make test` does
+- Other option is to require approval to run workflows from other repositories
+[check this page](https://docs.github.com/en/actions/managing-workflow-runs/approving-workflow-runs-from-public-forks) for more information.

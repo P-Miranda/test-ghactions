@@ -6,4 +6,4 @@
 
 echo "Running Error Script"
 hostnamectl
-exit 1
+exit 0

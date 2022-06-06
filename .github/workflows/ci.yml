@@ -7,10 +7,17 @@ on:
     branches: '*'
 
 jobs:
-  ci:
+  test1:
     runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v3
-      - name: test
-        run: make test
+      - name: test1
+        run: make test1
+  test2:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: test2
+        run: make test2

@@ -1,9 +1,10 @@
 
-all: test
+all: test1 test2
 
-test:
-	echo "running test"
-	make run-script
-
-run-script:
+test1:
+	echo "running $@"
 	./error_script.sh
+
+test2:
+	echo "running $@"
+	./passed_script.sh

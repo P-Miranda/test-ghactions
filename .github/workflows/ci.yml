@@ -3,6 +3,9 @@ name: CI
 on:
   push:
     branches: [ master ]
+  # Don't forget to require approval for all outside collaborators
+  pull_request:
+    branches: '*'
   # Allow manual workflow runs
   workflow_dispatch:
 

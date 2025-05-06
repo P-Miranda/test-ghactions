@@ -1,5 +1,5 @@
 ARTIFACT_DIR := ./build
-ARTIFACT ?= artifact.tar
+ARTIFACT ?= artifact
 
 all: test1 test2
 
@@ -21,5 +21,7 @@ build-artifact:
 	cp Makefile $(ARTIFACT_DIR)/
 	cp *.sh $(ARTIFACT_DIR)/
 	cp README.md $(ARTIFACT_DIR)/
-	tar -cvf $(ARTIFACT) $(ARTIFACT_DIR)
-	
+	tar -cvf $(ARTIFACT)1.tar.gz $(ARTIFACT_DIR)
+	tar -cvf $(ARTIFACT)2.tar.gz $(ARTIFACT_DIR)
+	tar -cvf $(ARTIFACT)3.tar.gz $(ARTIFACT_DIR)
+	tar -cvf $(ARTIFACT)4.tar.gz $(ARTIFACT_DIR)

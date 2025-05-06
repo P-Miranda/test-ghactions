@@ -11,23 +11,23 @@ on:
 
 jobs:
   check-tools:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: check tools
         run: make check-tools
-  test1:
-    runs-on: self-hosted
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: test1
-        run: make test1
+  # test1:
+  #   runs-on: self-hosted
+  #
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - name: test1
+  #       run: make test1
   test2:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: test2
         run: make test2

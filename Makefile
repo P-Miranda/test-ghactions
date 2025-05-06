@@ -1,5 +1,5 @@
 ARTIFACT_DIR := ./build
-ARTIFACT := artifact.tar
+ARTIFACT ?= artifact.tar
 
 all: test1 test2
 

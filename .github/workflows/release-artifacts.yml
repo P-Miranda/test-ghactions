@@ -1,0 +1,18 @@
+name: Release-Artifacts
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build-and-upload-artifact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: build artifact
+        run: make build-artifact ARTIFACT=artifact.tar
+      - name: Upload to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: artifact.tar

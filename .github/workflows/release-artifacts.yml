@@ -15,4 +15,5 @@ jobs:
       - name: Upload to Release
         uses: softprops/action-gh-release@v2
         with:
-          files: *.tar.gz
+          files: |
+            *.tar.gz
